@@ -1,0 +1,36 @@
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Produção / Builds
+/dist
+/build
+/out
+
+# Arquivos de log gerados pelo npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variáveis de Ambiente (MUITO IMPORTANTE)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos do Sistema Operacional (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Arquivos de editores/IDE (VSCode, WebStorm, etc)
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

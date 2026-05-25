@@ -1,0 +1,9 @@
+.advisor-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+}

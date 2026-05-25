@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  max-width: none !important; /* Aqui está o matador de bordas */
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
