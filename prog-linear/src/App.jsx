@@ -15,7 +15,7 @@ function App() {
     <div className={`app-wrapper ${darkMode ? 'theme-dark' : 'theme-light'}`}>
 
       <header className="app-header">
-        <h1>Dashboard de Otimização</h1>
+        <h1>Programação Linear</h1>
         <button className="theme-toggle" onClick={toggleTheme}>
           {darkMode ? '☀️ Modo Claro' : '🌙 Modo Escuro'}
         </button>
@@ -31,7 +31,7 @@ function App() {
       </div>
 
       <footer className="app-footer">
-        <p>&copy; {new Date().getFullYear()} - Sistema de Gestão e Planejamento. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} - Sistema de Apoio a Gestão - SAG.</p>
       </footer>
 
     </div>

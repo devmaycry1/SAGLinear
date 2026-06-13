@@ -13,7 +13,7 @@ const Sidebar = ({ activeView, setActiveView }) => {
                 className={`nav-item ${activeView === 'novo' ? 'active' : ''}`}
                 onClick={() => setActiveView('novo')}
             >
-                📊 Novo Problema
+                🏭 Questão Enade - Nota 3
             </div>
         </aside>
     );

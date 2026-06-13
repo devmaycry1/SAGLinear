@@ -1,11 +1,25 @@
-.enade-container {
+.enade-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: row;
+    gap: 60px;
     padding: 40px 20px;
-    justify-content: center;
-    align-items: flex-start;
     width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.math-side-panel {
+    flex: 0 0 350px; 
+}
+
+.calculator-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1; 
+    max-width: 500px;
 }
 
 .enade-card {
@@ -13,7 +27,6 @@
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     width: 100%;
-    max-width: 450px;
     border: 1px solid var(--border-color);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -77,6 +90,7 @@
 
 .demand-input:focus {
     border-color: #6366f1;
+    background-color: var(--bg-card);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
@@ -115,8 +129,7 @@
 }
 
 .result-highlight .value {
-    color: #10b981;
-    /* Verde para remeter a dinheiro/custo ótimo */
+    color: #10b981; 
     font-size: 24px;
     font-weight: 800;
 }
@@ -150,4 +163,94 @@
 
 .production-item strong {
     color: var(--text-main);
+}
+
+.math-model-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    color: var(--text-main);
+    position: sticky; 
+    top: 20px;
+}
+
+.math-title {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #4f46e5;
+    font-weight: 800;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 12px;
+}
+
+.math-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.math-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.math-equation, .math-constraints span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.math-constraints {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 12px;
+    border-left: 3px solid #4f46e5;
+    background-color: var(--input-bg);
+    padding: 12px;
+    border-radius: 0 8px 8px 0;
+}
+
+.math-constraints small {
+    color: var(--text-muted);
+    font-family: var(--font-family); 
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.math-legend {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--border-color);
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.math-legend strong {
+    color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+    .enade-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .math-side-panel {
+        flex: 1;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .math-model-box {
+        position: relative;
+        top: 0;
+    }
 }
