@@ -57,9 +57,9 @@
 }
 
 .input-field:focus {
-    border-color: #6366f1;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  border-color: #6366f1; /* Mantém a borda indigo ao focar */
+  background-color: var(--bg-card); /* Puxa a cor dinâmica em vez do branco fixo */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
 .btn-calculate {
