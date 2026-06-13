@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PizzaAdvisor from './components/PizzaAdvisor';
+import PizzaAdvisor from './components/PizzaAdvisor/PizzaAdvisor';
 import NovaCalculadora from './components/CustoMin/CustoMin';
 import Sidebar from './components/Sidebar/Sidebar';
 import './App.css';
