@@ -1,0 +1,35 @@
+.sidebar {
+  width: 260px;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 10;
+}
+
+.nav-item {
+  padding: 16px 24px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-item:hover {
+  background-color: var(--input-bg);
+  color: var(--text-main);
+}
+
+.nav-item.active {
+  background-color: var(--input-bg);
+  color: #4f46e5; /* Índigo combinando com os botões */
+  border-left-color: #4f46e5;
+  font-weight: 600;
+}
